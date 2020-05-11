@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link href="./public/css/tailwind.generated.css" rel="stylesheet" />
+    <style>
+      .h-without-header {
+        height: calc(100vh - 9rem);
+      }
+      .h-1\/4 {
+        height: 25%;
+      }
+      .h-2\/4 {
+        height: 50%;
+      }
+      .h-3\/4 {
+        height: 75%;
+      }
+
+      .content-div {
+        background-image: url("https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .content-div:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(126, 213, 111, 0.801),
+            hsla(160, 64%, 43%, 0.801)
+          ),
+          url("https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80");
+      }
+
+      .image-cover {
+        height: 260px;
+      }
+
+      .content-div:hover .fd-cl {
+        opacity: 0.25;
+      }
+      .content-div:hover .fd-sh {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Top Bar started -->
+      <div class="h-12 w-full">
+        <div
+          class="h-full bg-white px-8 flex items-center justify-between border-b"
+        >
+          <div class="flex items-center">
+            <div class="py-1 px-2 bg-blue-300 rounded text-blue-800">
+              <span class="text-sm">NEW</span>
+            </div>
+            <div class="font-medium px-2">
+              <a href="" class="text-blue-900 hover:text-black">Avail offers</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-without-header w-full z-0">
+        <div
+          class="bg-gray-800 flex flex-col items-center text-center justify-end h-3/4"
+        >
+          <div class="w-1/3">
+            <h1 class="text-6xl text-white font-bold leading-none mb-4">
+              Search Baqala
+            </h1>
+            <p class="text-2xl text-white leading-tight tracking-wide">
+              Find shops near your location
+            </p>
+          </div>
+          <div class="w-4/5 mt-4 mb-8">
+            <div class="relative">
+              <svg
+                class="absolute top-0 mt-6 ml-6 w-8 h-8 text-gray-600"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input
+                class="text-3xl placeholder-gray-600 text-gray-800 pb-4 pt-5 pl-20 pr-4 rounded w-full border-b-4 focus:outline-none focus:border-blue-800"
+                type="text"
+                placeholder="Search in shops"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="h-1/4 bg-white w-full flex justify-center">
+          <div class="h-full flex items-center justify-between w-4/5">
+            <div class="text-xl text-blue-800 font-medium">
+              302 shops found
+            </div>
+            <div class="flex items-center justify-end">
+              <div
+                class="text-xl text-blue-800 font-medium flex items-center mr-12"
+              >
+                Most Recent
+                <svg
+                  class="ml-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="8 12 12 16 16 12"></polyline>
+                  <line x1="12" y1="8" x2="12" y2="16"></line>
+                </svg>
+              </div>
+              <div class="text-xl text-blue-800 font-medium flex items-center">
+                Next
+                <svg
+                  class="ml-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="8 12 12 16 16 12"></polyline>
+                  <line x1="12" y1="8" x2="12" y2="16"></line>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-start">
+        <div class="w-1/4 bg-white border-b flex justify-center">
+          <div
+            class="group px-4 max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4"
+          >
+            <img
+              class="w-full h-56 object-cover object-center"
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+              alt="avatar"
+            />
+            <div class="flex items-center px-6 py-3 bg-gray-900">
+              <svg
+                class="h-6 w-6 text-white fill-current"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 48C150 48 64 136.2 64 245.1v153.3c0 36.3 28.6 65.7 64 65.7h64V288h-85.3v-42.9c0-84.7 66.8-153.3 149.3-153.3s149.3 68.5 149.3 153.3V288H320v176h64c35.4 0 64-29.3 64-65.7V245.1C448 136.2 362 48 256 48z"
+                />
+              </svg>
+              <h1 class="mx-3 text-white font-semibold text-lg">
+                Bawabat Al Sharq
+              </h1>
+            </div>
+            <div class="py-4 px-6">
+              <h1 class="text-2xl font-semibold text-gray-800">
+                Aditya Kumar
+              </h1>
+              <p class="py-2 text-lg text-gray-700">
+                Located in Baniyas Eas with all services
+              </p>
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                  <path
+                    d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"
+                  />
+                  <g>
+                    <path
+                      d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"
+                    />
+                  </g>
+                </svg>
+                <h1 class="px-2 text-sm">Ravi/Prakash</h1>
+              </div>
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                  <path
+                    d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"
+                  />
+                </svg>
+                <h1 class="px-2 text-sm">Abu dhabi</h1>
+              </div>
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                  <path
+                    d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"
+                  />
+                </svg>
+                <h1 class="px-2 text-sm">baqal1@example.com</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/4 bg-white border-b flex justify-center">
+          <div
+            class="group max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4"
+          >
+            <img
+              class="w-full h-56 object-cover object-center"
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+              alt="avatar"
+            />
+            <div class="flex items-center px-6 py-3 bg-gray-900">
+              <svg
+                class="h-6 w-6 text-white fill-current"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 48C150 48 64 136.2 64 245.1v153.3c0 36.3 28.6 65.7 64 65.7h64V288h-85.3v-42.9c0-84.7 66.8-153.3 149.3-153.3s149.3 68.5 149.3 153.3V288H320v176h64c35.4 0 64-29.3 64-65.7V245.1C448 136.2 362 48 256 48z"
+                />
+              </svg>
+              <h1 class="mx-3 text-white font-semibold text-lg">
+                Bawabat Al Sharq
+              </h1>
+            </div>
+            <div class="py-4 px-6">
+              <h1 class="text-2xl font-semibold text-gray-800">
+                Aditya Kumar
+              </h1>
+              <p class="py-2 text-lg text-gray-700">
+                Located in Baniyas Eas with all services
+              </p>
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                  <path
+                    d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"
+                  />
+                  <g>
+                    <path
+                      d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"
+                    />
+                  </g>
+                </svg>
+                <h1 class="px-2 text-sm">Ravi/Prakash</h1>
+              </div>
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                  <path
+                    d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"
+                  />
+                </svg>
+                <h1 class="px-2 text-sm">Abu dhabi</h1>
+              </div>
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                  <path
+                    d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"
+                  />
+                </svg>
+                <h1 class="px-2 text-sm">baqal1@example.com</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/4 bg-white border-b flex justify-center">
+          <div
+            class="group max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4"
+          >
+            <img
+              class="w-full h-56 object-cover object-center"
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+              alt="avatar"
+            />
+            <div class="flex items-center px-6 py-3 bg-gray-900">
+              <svg
+                class="h-6 w-6 text-white fill-current"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 48C150 48 64 136.2 64 245.1v153.3c0 36.3 28.6 65.7 64 65.7h64V288h-85.3v-42.9c0-84.7 66.8-153.3 149.3-153.3s149.3 68.5 149.3 153.3V288H320v176h64c35.4 0 64-29.3 64-65.7V245.1C448 136.2 362 48 256 48z"
+                />
+              </svg>
+              <h1 class="mx-3 text-white font-semibold text-lg">
+                Bawabat Al Sharq
+              </h1>
+            </div>
+            <div class="py-4 px-6">
+              <h1 class="text-2xl font-semibold text-gray-800">
+                Aditya Kumar
+              </h1>
+              <p class="py-2 text-lg text-gray-700">
+                Located in Baniyas Eas with all services
+              </p>
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                  <path
+                    d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"
+                  />
+                  <g>
+                    <path
+                      d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"
+                    />
+                  </g>
+                </svg>
+                <h1 class="px-2 text-sm">Ravi/Prakash</h1>
+              </div>
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                  <path
+                    d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"
+                  />
+                </svg>
+                <h1 class="px-2 text-sm">Abu dhabi</h1>
+              </div>
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                  <path
+                    d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"
+                  />
+                </svg>
+                <h1 class="px-2 text-sm">baqal1@example.com</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/4 bg-white border-b flex justify-center">
+          <div class="py-4 px-4">
+            <div
+              class="shadow-lg group container rounded-md bg-white max-w-sm flex justify-center items-center mx-auto content-div"
+            >
+              <div>
+                <div class="w-full image-cover rounded-t-md">
+                  <div
+                    class="p-2 m-4 w-16 h-16 text-center bg-gray-700 rounded-full text-white float-right fd-cl group-hover:opacity-25"
+                  >
+                    <span
+                      class="text-base tracking-wide font-bold border-b border-white font-sans"
+                    >
+                      12</span
+                    >
+                    <span
+                      class="text-xs tracking-wide font-bold uppercase block font-sans"
+                      >April</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="py-8 px-4 bg-white rounded-b-md fd-cl group-hover:opacity-25"
+                >
+                  <span
+                    class="block text-lg text-gray-800 font-bold tracking-wide"
+                    >Book a flight</span
+                  >
+                  <span class="block text-gray-600 text-sm"
+                    >Vivamus ac ligula sit amet erat luctus laoreet ac quis
+                    ligula. Donec bibendum faucibus purus eget cursus. Proin
+                    enim ante, scelerisque vel sem sit amet, ultrices mollis
+                    risus. Praesent justo felis, ullamcorper a cursus sed,
+                    condimentum at dui.
+                  </span>
+                </div>
+              </div>
+              <div class="absolute opacity-0 fd-sh group-hover:opacity-100">
+                <span
+                  class="text-3xl font-bold text-white tracking-wider leading-relaxed font-sans"
+                  >Paris city of light</span
+                >
+                <div class="pt-8 text-center">
+                  <button
+                    class="text-center rounded-lg p-4 bg-white text-gray-700 font-bold text-lg"
+                  >
+                    Learn more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/4 bg-white border-b flex justify-center">
+          <div
+            class="group max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4"
+          >
+            <img
+              class="w-full h-56 object-cover object-center"
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+              alt="avatar"
+            />
+            <div class="flex items-center px-6 py-3 bg-gray-900">
+              <svg
+                class="h-6 w-6 text-white fill-current"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 48C150 48 64 136.2 64 245.1v153.3c0 36.3 28.6 65.7 64 65.7h64V288h-85.3v-42.9c0-84.7 66.8-153.3 149.3-153.3s149.3 68.5 149.3 153.3V288H320v176h64c35.4 0 64-29.3 64-65.7V245.1C448 136.2 362 48 256 48z"
+                />
+              </svg>
+              <h1 class="mx-3 text-white font-semibold text-lg">
+                Bawabat Al Sharq
+              </h1>
+            </div>
+            <div class="py-4 px-6">
+              <h1 class="text-2xl font-semibold text-gray-800">
+                Aditya Kumar
+              </h1>
+              <p class="py-2 text-lg text-gray-700">
+                Located in Baniyas Eas with all services
+              </p>
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                  <path
+                    d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"
+                  />
+                  <g>
+                    <path
+                      d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"
+                    />
+                  </g>
+                </svg>
+                <h1 class="px-2 text-sm">Ravi/Prakash</h1>
+              </div>
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                  <path
+                    d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"
+                  />
+                </svg>
+                <h1 class="px-2 text-sm">Abu dhabi</h1>
+              </div>
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                  <path
+                    d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"
+                  />
+                </svg>
+                <h1 class="px-2 text-sm">baqal1@example.com</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-1/4 bg-white border-b flex justify-center">
+          <div class="py-4 px-4">
+            <div
+              class="shadow-lg group container rounded-md bg-white max-w-sm flex justify-center items-center mx-auto content-div"
+            >
+              <div>
+                <div class="w-full image-cover rounded-t-md">
+                  <div
+                    class="p-2 m-4 w-16 h-16 text-center bg-gray-700 rounded-full text-white float-right fd-cl group-hover:opacity-25"
+                  >
+                    <span
+                      class="text-base tracking-wide font-bold border-b border-white font-sans"
+                    >
+                      12</span
+                    >
+                    <span
+                      class="text-xs tracking-wide font-bold uppercase block font-sans"
+                      >April</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="py-8 px-4 bg-white rounded-b-md fd-cl group-hover:opacity-25"
+                >
+                  <span
+                    class="block text-lg text-gray-800 font-bold tracking-wide"
+                    >Book a flight</span
+                  >
+                  <span class="block text-gray-600 text-sm"
+                    >Vivamus ac ligula sit amet erat luctus laoreet ac quis
+                    ligula. Donec bibendum faucibus purus eget cursus. Proin
+                    enim ante, scelerisque vel sem sit amet, ultrices mollis
+                    risus. Praesent justo felis, ullamcorper a cursus sed,
+                    condimentum at dui.
+                  </span>
+                </div>
+              </div>
+              <div class="absolute opacity-0 fd-sh group-hover:opacity-100">
+                <span
+                  class="text-3xl font-bold text-white tracking-wider leading-relaxed font-sans"
+                  >Paris city of light</span
+                >
+                <div class="pt-8 text-center">
+                  <button
+                    class="text-center rounded-lg p-4 bg-white text-gray-700 font-bold text-lg"
+                  >
+                    Learn more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
